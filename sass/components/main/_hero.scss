@@ -25,9 +25,9 @@
     
     &__text {
 
+
+        max-width: 100%;
         margin-bottom: 30px;
-        width: 360px;
-        // что тут делать для меньших экранов?
         margin-right: auto;
         margin-left: auto;
         @include font(26px, 900, 1.6);
@@ -36,6 +36,10 @@
         text-transform: uppercase;
 
         color: $light-text-color;
+
+        @media screen and (min-width: 480px) {
+            width: 360px;
+        }
 
         @media screen and (min-width: 1200px) {
             @include font(44px, 900, 1.4);
