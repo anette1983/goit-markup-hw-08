@@ -1,0 +1,56 @@
+.hero {
+
+    max-width: 1600px;
+
+    padding-top: 118px;
+    padding-bottom: 118px;
+   
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+
+    background-color: $hero-fill-color;
+    background-image: linear-gradient($hero-gradient-color, $hero-gradient-color),
+        url("../images/hero-bgr.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (min-width: 1200px) {
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
+
+    
+    &__text {
+
+        margin-bottom: 30px;
+        width: 360px;
+        // что тут делать для меньших экранов?
+        margin-right: auto;
+        margin-left: auto;
+        @include font(26px, 900, 1.6);
+        letter-spacing: 0.06em;
+
+        text-transform: uppercase;
+
+        color: $light-text-color;
+
+        @media screen and (min-width: 1200px) {
+            @include font(44px, 900, 1.4);
+            width: 696px;
+            }
+   
+    }
+
+    &__button {
+        padding: 10px 24px;
+        @extend %button;
+        @media screen and (min-width: 1200px) {
+                padding: 10px 32px;
+            }
+
+    }
+
+}

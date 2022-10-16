@@ -1,0 +1,55 @@
+.mobile-menu__nav-link {
+    @include font(40px, 500, 1.17);
+    
+    letter-spacing: 0.02em;
+
+    color: $secondary-text-color;
+
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+
+// поправить селекторы и разметку первого ула
+
+
+
+.mobile-menu__nav-link--current {
+    color: $accent-color;
+    margin-bottom: 35px;
+}
+
+.mobile-menu__contacts {
+    margin-top: auto;
+}
+
+.mobile-menu__contacts-link {
+    &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+}
+
+.mobile-menu__contacts {
+    margin-bottom: 64px;
+}
+
+.mobile-menu__contacts-link {
+
+    @include font(34px, 500, 1.18);
+    letter-spacing: 0.02em;
+
+    color: $accent-color;
+    &:last-child {
+        @include font(24px, 500, 1.17);
+        letter-spacing: 0.02em;
+    
+        color: $primary-text-color;
+    }
+
+}
+
+.mobile-menu__sns {
+    display: flex;
+    justify-content: center;
+}
+
