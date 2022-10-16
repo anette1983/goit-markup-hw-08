@@ -331,6 +331,9 @@ img {
 
 .menu-container {
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   top: 0;
   left: 0;
   width: 100vw;
@@ -374,6 +377,29 @@ img {
     display: none;
   }
 }
+.menu-toggle--position {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mobile-menu__nav-item:not(:last-child),
+.mobile-menu__contacts-item:not(:last-child) {
+  margin-bottom: 32px;
+}
 
 .mobile-menu__nav-link {
   font-size: 40px;
@@ -382,22 +408,12 @@ img {
   letter-spacing: 0.02em;
   color: #212121;
 }
-.mobile-menu__nav-link:not(:last-child) {
-  margin-bottom: 32px;
-}
 
 .mobile-menu__nav-link--current {
-  color: #2196f3;
-  margin-left: 10px;
+  display: block;
+  margin-left: 4px;
   margin-bottom: 35px;
-}
-
-.mobile-menu__contacts {
-  margin-top: auto;
-}
-
-.mobile-menu__contacts-link:not(:last-child) {
-  margin-bottom: 32px;
+  color: #2196f3;
 }
 
 .mobile-menu__contacts {
@@ -411,7 +427,8 @@ img {
   letter-spacing: 0.02em;
   color: #2196f3;
 }
-.mobile-menu__contacts-link:last-child {
+
+.mobile-menu__contacts-link--accent {
   font-size: 24px;
   font-weight: 500;
   line-height: 1.17;
@@ -423,9 +440,24 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-top: 64px;
+}
+
+.mobile-menu__sns-link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mobile-menu__sns-item + .mobile-menu__sns-item {
+  padding-left: 10px;
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-menu__sns-item:not(:last-child) {
+  padding-right: 10px;
 }
 
 .sns {

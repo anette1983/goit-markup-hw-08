@@ -1,5 +1,6 @@
 .menu-container {
     position: fixed;
+    display: flex;
     top: 0;
     left: 0;
     width: 100vw;
@@ -33,9 +34,28 @@
     @media screen and (min-width: 768px) {
         display: none;
     }
-} 
-// это позже, когда установлю иконку и проставлю ей размеры, как сказала Алена
 
+    &--position {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+    }
+} 
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+.mobile-menu__nav-item,
+.mobile-menu__contacts-item {
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
 
 .mobile-menu__nav-link {
     @include font(40px, 500, 1.17);
@@ -44,30 +64,15 @@
 
     color: $secondary-text-color;
 
-    &:not(:last-child) {
-        margin-bottom: 32px;
-    }
+    
 }
-
-// поправить селекторы и разметку первого ула
-
 
 
 .mobile-menu__nav-link--current {
-    color: $accent-color;
-    margin-left: 10px;
-    // проверить размер слева потом
+    display: block;
+    margin-left: 4px;
     margin-bottom: 35px;
-}
-
-.mobile-menu__contacts {
-    margin-top: auto;
-}
-
-.mobile-menu__contacts-link {
-    &:not(:last-child) {
-            margin-bottom: 32px;
-        }
+    color: $accent-color;
 }
 
 .mobile-menu__contacts {
@@ -77,20 +82,50 @@
 .mobile-menu__contacts-link {
 
     @include font(34px, 500, 1.18);
-    letter-spacing: 0.02em;
-
-    color: $accent-color;
-    &:last-child {
-        @include font(24px, 500, 1.17);
         letter-spacing: 0.02em;
     
-        color: $primary-text-color;
-    }
+        color: $accent-color; 
+
+    // & + & {
+    // @include font(24px, 500, 1.17);
+    //     letter-spacing: 0.02em;
+    
+    //     color: $primary-text-color;
+    // }
+
+}
+
+.mobile-menu__contacts-link--accent {
+    @include font(24px, 500, 1.17);
+    letter-spacing: 0.02em;
+    
+    color: $primary-text-color;
 
 }
 
 .mobile-menu__sns {
     display: flex;
-    justify-content: center;
+    margin-top: 64px;
 }
+
+.mobile-menu__sns-link {
+    @include font(18px, 500, 1.2);
+    letter-spacing: 0.02em;
+    
+    color: $accent-color;
+    // & + & {
+    //     border-left: 1px solid $modal-input-border;
+    // }
+}
+
+.mobile-menu__sns-item + .mobile-menu__sns-item {
+    padding-left: 10px;
+    border-left: 1px solid $modal-input-border;
+}
+
+.mobile-menu__sns-item:not(:last-child) {
+    padding-right: 10px;
+}
+
+
 
