@@ -1299,7 +1299,7 @@ img {
 }
 @media screen and (max-width: 479px) {
   .subscribe__button {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
