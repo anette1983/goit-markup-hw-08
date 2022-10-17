@@ -455,6 +455,14 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin-top: 64px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (min-width: 420px) {
+  .mobile-menu__sns {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 .mobile-menu__sns-link {
@@ -466,8 +474,12 @@ img {
 }
 
 .mobile-menu__sns-item + .mobile-menu__sns-item {
-  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.mobile-menu__sns-item:not(:first-child) {
   border-left: 1px solid rgba(33, 33, 33, 0.2);
+  padding-left: 10px;
 }
 
 .mobile-menu__sns-item:not(:last-child) {

@@ -106,6 +106,10 @@
 .mobile-menu__sns {
     display: flex;
     margin-top: 64px;
+    flex-wrap: wrap;
+    @media screen and (min-width: 420px) {
+        flex-wrap: nowrap;
+    }
 }
 
 .mobile-menu__sns-link {
@@ -119,12 +123,21 @@
 }
 
 .mobile-menu__sns-item + .mobile-menu__sns-item {
-    padding-left: 10px;
+    padding-right: 10px;
+    
+    
+}
+
+.mobile-menu__sns-item:not(:first-child) {
     border-left: 1px solid $modal-input-border;
+    padding-left: 10px;
+    
 }
 
 .mobile-menu__sns-item:not(:last-child) {
+    
     padding-right: 10px;
+
 }
 
 
