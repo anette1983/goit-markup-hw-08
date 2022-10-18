@@ -586,6 +586,7 @@ img {
   left: 0;
   width: 100vw;
   height: 100vh;
+  overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
@@ -594,7 +595,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .backdrop {
-    overflow-y: scroll;
+    padding: 93px 15px;
   }
 }
 .backdrop--is-hidden {
@@ -953,6 +954,11 @@ img {
   .features__item {
     -ms-flex-preferred-size: calc((100% - 90px) / 4);
         flex-basis: calc((100% - 90px) / 4);
+  }
+}
+@media screen and (max-width: 767px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
