@@ -235,31 +235,76 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="list about__list">
             <li class="about__item">
-              <img
+              <!-- <img
                 src="./images/box-1.jpg"
                 alt="Розробка десктопних додатків"
                 width="370"
-              />
+              /> -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/about-1.jpg    1x,
+                    ./images/about-1@2x.jpg 2x,
+                    ./images/about-1@3x.jpg 3x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/about-1.jpg"
+                  alt="Розробка десктопних додатків"
+                  width="370"
+                />
+              </picture>
               <div class="about__label">
                 <h3 class="subtitle about__subtitle">Десктопні додатки</h3>
               </div>
             </li>
             <li class="about__item">
-              <img
+              <!-- <img
                 src="./images/box-2.jpg"
                 alt="Розробка мобільних додатків"
                 width="370"
-              />
+              /> -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/about-2.jpg    1x,
+                    ./images/about-2@2x.jpg 2x,
+                    ./images/about-2@3x.jpg 3x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/about-2.jpg"
+                  alt="Розробка мобільних додатків"
+                  width="370"
+                />
+              </picture>
               <div class="about__label">
                 <h3 class="subtitle about__subtitle">Мобільні додатки</h3>
               </div>
             </li>
             <li class="about__item">
-              <img
+              <!-- <img
                 src="./images/box-3.jpg"
                 alt="Розробка дизайну"
                 width="370"
-              />
+              /> -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/about-3.jpg    1x,
+                    ./images/about-3@2x.jpg 2x,
+                    ./images/about-3@3x.jpg 3x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/about-3.jpg"
+                  alt="Розробка дизайну"
+                  width="370"
+                />
+              </picture>
               <div class="about__label">
                 <h3 class="subtitle about__subtitle">Дизайнерські рішення</h3>
               </div>
@@ -307,7 +352,10 @@
                   media="(max-width:767px)"
                 />
 
-                <img src="./images/team-igor-mob.jpg" alt="" />
+                <img
+                  src="./images/team-igor-mob.jpg"
+                  alt="Фото Ігоря Дем'яненко"
+                />
               </picture>
 
               <div class="team__content">
@@ -405,7 +453,10 @@
                   media="(max-width:767px)"
                 />
 
-                <img src="./images/team-olga-mob.jpg" alt="" />
+                <img
+                  src="./images/team-olga-mob.jpg"
+                  alt="Фото Ольги Рєпіної"
+                />
               </picture>
 
               <div class="team__content">
@@ -503,7 +554,10 @@
                   media="(max-width:767px)"
                 />
 
-                <img src="./images/team-mykola-mob.jpg" alt="" />
+                <img
+                  src="./images/team-mykola-mob.jpg"
+                  alt="Фото Миколи Тарасова"
+                />
               </picture>
 
               <div class="team__content">
@@ -567,33 +621,36 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team-mykola-desk.jpg    1x,
-                    ./images/team-mykola-desk@2x.jpg 2x,
-                    ./images/team-mykola-desk@3x.jpg 3x
+                    ./images/team-mykhailo-desk.jpg    1x,
+                    ./images/team-mykhailo-desk@2x.jpg 2x,
+                    ./images/team-mykhailo-desk@3x.jpg 3x
                   "
                   type="image/jpeg"
                   media="(min-width:1200px)"
                 />
                 <source
                   srcset="
-                    ./images/team-mykola-tab.jpg    1x,
-                    ./images/team-mykola-tab@2x.jpg 2x,
-                    ./images/team-mykola-tab@3x.jpg 3x
+                    ./images/team-mykhailo-tab.jpg    1x,
+                    ./images/team-mykhailo-tab@2x.jpg 2x,
+                    ./images/team-mykhailo-tab@3x.jpg 3x
                   "
                   type="image/jpeg"
                   media="(min-width:768px)"
                 />
                 <source
                   srcset="
-                    ./images/team-mykola-mob.jpg    1x,
-                    ./images/team-mykola-mob@2x.jpg 2x,
-                    ./images/team-mykola-mob@3x.jpg 3x
+                    ./images/team-mykhailo-mob.jpg    1x,
+                    ./images/team-mykhailo-mob@2x.jpg 2x,
+                    ./images/team-mykhailo-mob@3x.jpg 3x
                   "
                   type="image/jpeg"
                   media="(max-width:767px)"
                 />
 
-                <img src="./images/team-mykola-mob.jpg" alt="" />
+                <img
+                  src="./images/team-mykhailo-mob.jpg"
+                  alt="Фото Михайла Єрмакова"
+                />
               </picture>
               <div class="team__content">
                 <h3 class="team__name">Михайло Єрмаков</h3>
@@ -846,13 +903,15 @@
         <div class="mobile-menu__connect">
           <ul class="mobile-menu__contacts list">
             <li class="mobile-menu__contacts-item">
-              <a href="" class="mobile-menu__contacts-link link"
+              <a
+                href="tel:+380961111111"
+                class="mobile-menu__contacts-link link"
                 >+38 096 111 11 11</a
               >
             </li>
             <li class="mobile-menu__contacts-item">
               <a
-                href=""
+                href="mailto:info@devstudio.com"
                 class="mobile-menu__contacts-link mobile-menu__contacts-link--accent link"
                 >info@devstudio.com</a
               >
