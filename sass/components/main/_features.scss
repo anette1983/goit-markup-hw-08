@@ -24,6 +24,9 @@
         margin-bottom: 10px;
         color:
             $secondary-text-color;
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
     }
 
     &__info {
