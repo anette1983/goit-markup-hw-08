@@ -147,6 +147,7 @@ img {
 .header {
   padding-top: 16px;
   padding-bottom: 16px;
+  border-bottom: 1px solid #ececec;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -158,7 +159,6 @@ img {
   .header {
     padding-top: 24px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #ececec;
   }
 }
 

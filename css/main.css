@@ -161,6 +161,7 @@ img {
 .header {
   padding-top: 16px;
   padding-bottom: 16px;
+  border-bottom: 1px solid #ececec;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -172,7 +173,6 @@ img {
   .header {
     padding-top: 24px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #ececec;
   }
 }
 
@@ -481,7 +481,7 @@ img {
 }
 
 .hero {
-  max-width: 480px;
+  max-width: 767px;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-left: auto;
@@ -508,7 +508,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
+    max-width: 1199px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-bg-tablet.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-tablet.jpg");
   }
