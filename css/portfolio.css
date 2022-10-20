@@ -394,9 +394,6 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.mobile-menu__nav {
-  margin-bottom: 32px;
-}
 
 .mobile-menu__nav-item:not(:last-child),
 .mobile-menu__contacts-item:not(:last-child) {
