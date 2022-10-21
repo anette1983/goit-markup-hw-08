@@ -124,10 +124,14 @@
 }
 
 .mobile-menu__sns-link {
-    @include font(18px, 500, 1.2);
+    @include font(14px, 500, 1.2);
     letter-spacing: 0.02em;
     
     color: $accent-color;
+    
+    @media screen and (min-width: 420px){
+        @include font(18px, 500, 1.2);
+    }
 }
 
 

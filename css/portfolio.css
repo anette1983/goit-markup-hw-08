@@ -480,11 +480,18 @@ img {
 }
 
 .mobile-menu__sns-link {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+@media screen and (min-width: 420px) {
+  .mobile-menu__sns-link {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
 }
 
 .mobile-menu__sns-item:not(:last-child) {
