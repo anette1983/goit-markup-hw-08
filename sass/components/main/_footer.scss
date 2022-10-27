@@ -3,7 +3,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1199.98px) {
         text-align: center;
     }
    
@@ -18,7 +18,7 @@
                 // justify-content: space-around;
             }
 
-        @media screen and (max-width: 1199px) {
+        @media screen and (max-width: 1199.98px) {
             flex-wrap: wrap;
             justify-content: space-around;
         }
@@ -33,7 +33,7 @@
     }
 
     &__wrapper {
-        @media screen and (max-width: 1199px) {
+        @media screen and (max-width: 1199.98px) {
                 margin-bottom: 60px;
             }
        
@@ -47,7 +47,7 @@
     &__item:not(:last-child) {
         margin-bottom: 8px;
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1199.99px) {
                 margin-bottom: 9px;
             }
     }
@@ -75,11 +75,11 @@
 
 .footer-sns {
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
         margin-bottom: 60px;   
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1199.99px) {
         margin-left: 95px;
     /* в макете указано 70, но отмеряет не от конца текста, а есть еще доп зазор */
     }
@@ -88,7 +88,7 @@
 .footer-sns__list {
     display: flex;
     
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
             justify-content: center;
     
         }
@@ -104,7 +104,7 @@
 
 .subscribe {
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1199.99px) {
             margin-left: auto;
         }
 }
@@ -117,12 +117,12 @@
     // определиться с шириной
     padding: 15px 16px;
   
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1199.98px) {
         margin-bottom: 20px;
         
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1199.99px) {
         width: 358px;
         margin-right: 12px;
     }

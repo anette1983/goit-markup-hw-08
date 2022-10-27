@@ -3,7 +3,7 @@
     justify-content: center;
     gap: 30px;
     
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1199.98px) {
         flex-wrap: wrap;
         
     }
@@ -16,11 +16,11 @@
     height: 92px;
 
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767.99px) {
         flex-basis: calc((100% - 2*30px)/3);
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1199.99px) {
         flex-basis: calc((100% - 5*30px)/6);
     }
 

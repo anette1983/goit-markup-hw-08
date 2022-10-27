@@ -1,6 +1,6 @@
 .works {
     &__list {
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 767.99px) {
                 display: flex;
                 flex-wrap: wrap;
                 gap: 30px;
@@ -12,15 +12,15 @@
 
         max-width: 100%;
 
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 767.98px) {
             margin-bottom: 30px;
         }
 
-        @media screen and (min-width: 768px){
+        @media screen and (min-width: 767.99px){
             flex-basis: calc((100% - 30px) / 2);
         }
 
-        @media screen and (min-width: 1200px){
+        @media screen and (min-width: 1199.99px){
             flex-basis: calc((100% - 60px) / 3);
         }
     }
@@ -89,11 +89,11 @@
     }
 
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767.99px) {
         padding: 49px 24px 77px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1199.99px) {
         padding: 63px 24px;
     }
 

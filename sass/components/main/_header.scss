@@ -6,9 +6,9 @@
 
     display: flex;
     align-items: center;
-    // max-width: 767px;
+    
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1199.98px) {
         justify-content: space-between;
     }
     
@@ -24,7 +24,7 @@
         color: $accent-color;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1199.99px) {
         @include font(26px, 700, 1.2);
     }
 }
@@ -32,14 +32,14 @@
 .header__logo {
     color: $logo-dark-color;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.99px) {
         display: block;
         padding-top: 16px;
         padding-bottom: 16px;
     }
     
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1199.99px) {
         margin-right: 93px;
     }
    
@@ -47,7 +47,7 @@
 
 
 .nav__list {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.99px) {
         display: none;
     }
     @media screen and (min-width: 768px) {
@@ -72,7 +72,7 @@
     @include font(14px, 500, 1.14);
     letter-spacing: 0.02em;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767.99px) {
         display: block;
         padding-top: 32px;
         padding-bottom: 32px;
@@ -104,7 +104,7 @@
 }
 
 .header-contacts {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.99px) {
             display: none;
         }
 
@@ -113,13 +113,13 @@
         flex-direction: column;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1199.99px) {
         flex-direction: row;
         margin-left: auto;
     }
 }
 
- @media screen and (min-width: 1200px) {
+ @media screen and (min-width: 1199.99px) {
     .header-contacts__item {
         &+& {
             margin-left: 50px;
@@ -129,7 +129,7 @@
 
  }
 
- @media screen and (max-width: 1199px) {
+ @media screen and (max-width: 1199.98px) {
      .header-contacts__item {
          &:not(:last-child) {
              margin-bottom: 8px;
@@ -154,7 +154,7 @@
          color: $accent-color;
      }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1199.99px) {
         @include font(14px, 500, 1.14);
     }
 
@@ -166,7 +166,7 @@
      fill: currentColor;
      margin-right: 8px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1199.99px) {
       margin-right: 10px;
     }
     
